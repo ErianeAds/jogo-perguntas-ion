@@ -1,0 +1,83 @@
+.card {
+    
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 140px;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    
+  }
+  
+  .question {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .correct {
+    background-image: url('/acertou.png');
+  }
+  
+  .correct:hover {
+  
+  }
+  
+  .wrong {
+    background-color: url('/errou.png');
+  }
+  
+  .wrong:hover {
+   
+  }
+  
+  .skip {
+    background-image: url('/bot-verde.png');
+    width: 171px;     /* Ajuste conforme o tamanho desejado */
+      height: 80px;
+  }
+  
+  .skip:hover {
+    
+  }
+
+  .button-group {
+    margin-top: 10px; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .question-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); /* Opcional para dar contraste */
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+
+  .h2 {
+    font-size: 4rem;
+  }

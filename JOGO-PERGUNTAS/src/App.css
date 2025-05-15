@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'Basis33';
+  src: url('/fonts/Basis33.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Basis33', sans-serif;
+  background-color: black;
+}
+
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-size: cover;
+}
+
+.title {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Isso distribui pergunta no topo e botões embaixo */
+  align-items: center;
+  min-height: 35vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+
+.question {
+  font-size: 3rem;
+  margin-bottom: 20px;
+
+}
+
+.buttons {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  margin-top: 200px;
+  font-family: 'Basis33', sans-serif;
+ 
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  background-position: center;
+  width: 171px;     /* Ajuste conforme o tamanho desejado */
+  height: 80px;
+  border-color: black;
+  box-sizing: inherit;
+  cursor: pointer;
+  font-family: 'Basis33', sans-serif;
+}
+
+.correct {
+  background-image: url('/bot-azul.png');
+}
+
+.correct:hover {
+  
+}
+
+.wrong {
+  background-image: url('/bot-vermelho.png');
+  width: 169,5px;     /* Ajuste conforme o tamanho desejado */
+  height: 79px;
+}
+
+.wrong:hover {
+  
+}
+
+.btn.correct {
+  background-image:url('/bot-azul.png');
+  margin-top: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;     /* Ajuste conforme o tamanho desejado */
+  height:80px;
+  border: none;
+  cursor: pointer;
+}
+
+.card .question {
+  margin-bottom: 10px;
+  max-width: 1120px;
+  width: 100%;
+}
+
+.start-image {
+  display: none;
+  
+}
+
+.start-screen {
+  background-image: url('/tela-inicial.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  margin-top: 470px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.btn-start {
+  background-image: url('/botao-salvar.png'); /* Correto */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;     /* Ajuste conforme o tamanho desejado */
+  height: 65px;
+  border: none;
+  cursor: pointer;
+}
+
+.perguntas-screen {
+  background-image: url('/tela-perguntas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+
+.button-group {
+  margin-top: 10px; /* ou remova totalmente */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+  .h2 {
+    font-size: 4rem;
+  }
+
+
+  /* Tela Final */
+.final-screen {
+  background-image: url('/tela-final.jpg'); /* coloque a imagem de fundo desejada */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Basis33', sans-serif;
+}
+.card-final {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.final-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  margin-right: 600px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 600px;
+ 
+}
+
+
+.card h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Basis33', sans-serif;
+}
+
+
+.placar h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Basis33', sans-serif;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 800px) {
+  .container,
+  .start-screen,
+  .perguntas-screen,
+  .final-screen,
+  .card,
+  .card-final,
+  .final-content {
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+
+  .question {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 140px;
+    height: 65px;
+    font-size: 0.9rem;
+  }
+
+  .btn.correct,
+  .btn.wrong {
+    width: 150px;
+    height: 70px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container,
+  .start-screen,
+  .perguntas-screen,
+  .final-screen,
+  .card,
+  .card-final,
+  .final-content {
+    transform: scale(0.65);
+    transform-origin: top center;
+  }
+
+  .question {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 120px;
+    height: 60px;
+    font-size: 0.8rem;
+  }
+
+  .btn.correct,
+  .btn.wrong {
+    width: 135px;
+    height: 65px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    top: 60px;
+  }
+}
