@@ -30,7 +30,7 @@
   }
   
   .correct {
-    background-image: url('/acertou.png');
+    background-image: url('./img/acertou.png');
   }
   
   .correct:hover {
@@ -38,7 +38,7 @@
   }
   
   .wrong {
-    background-color: url('/errou.png');
+    background-color: url('./img/errou.png');
   }
   
   .wrong:hover {
@@ -46,7 +46,7 @@
   }
   
   .skip {
-    background-image: url('/bot-verde.png');
+    background-image: url('./img/bot-verde.png');
     width: 171px;     /* Ajuste conforme o tamanho desejado */
       height: 80px;
   }

@@ -79,7 +79,7 @@ body {
 }
 
 .correct {
-  background-image: url('/bot-azul.png');
+  background-image: url('../src/assets/img/bot-azul.png');
 }
 
 .correct:hover {
@@ -87,7 +87,7 @@ body {
 }
 
 .wrong {
-  background-image: url('/bot-vermelho.png');
+  background-image: url('../src/assets/img/bot-vermelho.png');
   width: 169,5px;     /* Ajuste conforme o tamanho desejado */
   height: 79px;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 .btn.correct {
-  background-image:url('/bot-azul.png');
+  background-image:url('../src/assets/img/bot-azul.png');
   margin-top: 20px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ body {
 }
 
 .start-screen {
-  background-image: url('/tela-inicial.jpg');
+  background-image: url('../src/assets/img/tela-inicial.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,7 +143,7 @@ body {
   align-items: center;
 }
 .btn-start {
-  background-image: url('/botao-salvar.png'); /* Correto */
+  background-image: url('../src/assets/img/botao-salvar.png'); /* Correto */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -154,7 +154,7 @@ body {
 }
 
 .perguntas-screen {
-  background-image: url('/tela-perguntas.jpg');
+  background-image: url('../src/assets/img/tela-perguntas.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ body {
 
   /* Tela Final */
 .final-screen {
-  background-image: url('/tela-final.jpg'); /* coloque a imagem de fundo desejada */
+  background-image: url('../src/assets/img/tela-final.jpg'); /* coloque a imagem de fundo desejada */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
